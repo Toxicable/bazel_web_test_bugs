@@ -1,0 +1,29 @@
+load("@npm_bazel_typescript//:index.bzl", "ts_library")
+load("@npm_bazel_karma//:index.bzl", "karma_web_test")
+
+ts_library(
+    name = "source",
+    srcs = ["source_file.ts"],
+    deps = [
+        "@npm//sprintf-js",
+        "@npm//@types/jasmine",
+    ]
+)
+
+ts_library(
+    name = "test_source",
+    srcs = ["spec_file.spec.ts"],
+    deps = [
+        "@npm//@types/jasmine",
+        ":source"
+    ]
+)
+
+karma_web_test(
+    name = "testing_karma",
+    srcs = [
+    ],
+    deps = [
+        ":test_source",
+    ],
+)

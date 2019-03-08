@@ -1,0 +1,17 @@
+{
+  "name": "bazel-web-test-bugs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@bazel/ibazel": "^0.9.1",
+    "@bazel/karma": "^0.27.1",
+    "@bazel/typescript": "^0.27.1",
+    "@types/jasmine": "^3.3.9",
+    "@types/sprintf-js": "^1.1.2",
+    "jasmine": "^3.3.1",
+    "karma": "^4.0.1",
+    "sprintf-js": "^1.1.2",
+    "typescript": "^3.3.3333"
+  }
+}
